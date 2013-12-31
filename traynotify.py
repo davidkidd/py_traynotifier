@@ -200,5 +200,6 @@ class TrayNotifier(wx.TaskBarIcon):
 
 if __name__ == '__main__':
     app = wx.App()
-    notifier = TrayNotifier("Update notifier", "http://example.com/page_to_check.html", refresh_rate_milliseconds=1*1000)
+    notifier = TrayNotifier("Update notifier", "http://backstrip.net")
+    # notifier = TrayNotifier("Update notifier", "http://example.com/page_to_check.html")
     app.MainLoop()
