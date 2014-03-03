@@ -131,7 +131,7 @@ class TrayNotifier(wx.TaskBarIcon):
                 h = self.generate_hash(f.read())
                 if self.check_page_updated(h):
                     self.toggle_alert()
-                    msg = self.balloon_txt
+                    msg = self.balloon_text
             except urllib2.HTTPError, e:
                 msg = 'HTTPError: ' + str(e.code)
             except urllib2.URLError, e:
